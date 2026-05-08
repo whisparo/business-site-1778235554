@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر ملابس رائع</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Barlow', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            padding-top: 70px;
+            transition: background-color 0.2s ease-out;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        .header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .header nav ul li {
+            margin-right: 20px;
+            transition: transform 0.2s ease-out;
+        }
+        
+        .header nav ul li:hover {
+            transform: scale(1.1);
+        }
+        
+        .header nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease-out;
+        }
+        
+        .header nav a:hover {
+            color: #444;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to bottom, #333, #555);
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        
+        .hero .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        
+        .hero .title {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero .description {
+            font-size: 1.5rem;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+        
+        .HeroButton {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .HeroButton:hover {
+            background-color: #555;
+        }
+        
+        .services {
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+        
+        .services ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .services li {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .services li:hover {
+            transform: scale(1.05);
+        }
+        
+        .services img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                height: 60vh;
+            }
+            .hero .title {
+                font-size: 2.5rem;
+            }
+            .hero .description {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            nav li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    متجر ملابس رائع
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">الصفحة الرئيسية</a></li>
+                        <li><a href="#services">خدمات</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <h1 class="title">متجر الملابس</h1>
+                <p class="description">
+                    أكبر متجر ملابس في العالم
+                </p>
+                <button class="HeroButton">تسوق الآن</button>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <h2>خدماتنا</h2>
+                <ul>
+                    <li>
+                        <img src="image1.jpg" alt="صورة الخدمة">
+                        <h3>خدمة 1</h3>
+                        <p>وصف الخدمة</p>
+                    </li>
+                    <li>
+                        <img src="image2.jpg" alt="صورة الخدمة">
+                        <h3>خدمة 2</h3>
+                        <p>وصف الخدمة</p>
+                    </li>
+                    <li>
+                        <img src="image3.jpg" alt="صورة الخدمة">
+                        <h3>خدمة 3</h3>
+                        <p>وصف الخدمة</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <p>
+                    <a href="tel:+20101010101">+20101010101</a> - <a href="mailto:info@metjarmallabes.com">info@metjarmallabes.com</a>
+                </p>
+                <p>عننا | شروط الاستخدام</p>
+                <p>2024 براندو</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        // JavaScript code here
+    </script>
+</body>
+</html>
